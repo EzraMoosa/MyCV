@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global Styling ---------------------------------------------------------- */
+body {
+    font-family: "New Amsterdam", sans-serif;
+    background-color: #0A192F;
+    color: #fff;
+}
+
+/* Navbar Styling ---------------------------------------------------------- */
+.navbar {
+    background-color: transparent;
+    border-bottom: 2px solid #FFD700;
+}
+
+.navbar-nav {
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    color: #48B1A1;
+    font-size: 3rem;
+    padding-left: 40px;
+}
+
+.navbar-brand:active {
+    color: #FFD700;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 30px;
+    color: #FFD700;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #fff;
+}
+
+.nav-link.active {
+    color: #FFD700;
+}
+
+/* Main Section ------------------------------------------------------------ */
+main {
+    margin: 0 20px;
+    padding: 0 40px;
+}
+
+main p {
+    font-family: "Poppins", sans-serif;
+    color: #48B1A1;
+    font-size: 2rem;
+    padding: 0;
+}
+
+main h1 {
+    color: #FFD700;
+    font-size: 8rem;
+}
+
+main h3 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+/* Global Section Styling -------------------------------------------------- */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 20px;
+}
+
+section h2 {
+    font-family: "New Amsterdam", sans-serif;
+    border-bottom: 2px solid #48B1A1;
+    color: #FFD700;
+}
+
+section p {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+section p span {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFD700;
+}
+
+section p strong {
+    color: #FFD700;
+}
+
+#bio, #skills, #academics, #experience, #contact {
+    text-align: center;
+}
+
+/* Bio Section ------------------------------------------------------------- */
+#bio {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    padding: 20px 30px;
+}
+
+#bio span {
+    display: block;
+    padding: 40px 0;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #FFD700;
+}
+
+/* Skills Section ---------------------------------------------------------- */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.skills-box {
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-container ul li {
+    display: inline-flex;
+    background-color: #FFD700;
+    border-radius: 20px;
+    margin: 3%;
+    padding: 0 12px;
+    font-size: 2rem;
+    color: #0A192F;
+    transition: 0.2s ease;
+}
+
+.skills-container ul li:hover {
+    background-color: #48B1A1;
+    color: #fff;
+    border-radius: 4px;
+    cursor: default;
+    transform: scale(1.1);
+}
+
+/* Academics Section ------------------------------------------------------- */
+.academics-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.academics-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.academics-list strong {
+    color: #FFD700;
+}
+
+.academics-list li {
+    margin-bottom: 10px;
+    font-size: 3rem;
+    line-height: 1.5;
+    transition: 0.3s ease;
+}
+
+.academics-list li:hover {
+    transform: scale(1.1);
+    cursor: default;
+    color: #48B1A1;
+}
+
+/* Experience Section ------------------------------------------------------ */
+.experience-item {
+    padding: 10px;
+    border: 2px solid #48B1A1;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-15px);
+    border-radius: 0;
+}
+
+.experience-content {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #48B1A1;
+    margin-bottom: 10px;
+}
+
+.occupation {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #FFD700;
+    padding: 0 10px;
+}
+
+.details-container {
+    flex: 2;
+    text-align: center;
+}
+
+.company-name strong {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #48B1A1;
+    text-decoration: underline;
+}
+
+.company-time {
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.responsibilities {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.responsibilities li {
+    padding: 0 30px;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #FFD700;
+}
+
+/* Contact Section */
+.contact-info {
+    margin: 10% 0;
+}
+
+.contact-info p {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    color: #FFD700;
+}
+
+.social-media a {
+    font-size: 4rem;
+    padding: 0 40px;
+    color: #FFD700;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #fff;
+}
+
+/* Footer Section ---------------------------------------------------------- */
+.footer {
+    background-color: #0A192F;
+    color: #ffffff;
+    border-top: 2px solid #48B1A1;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1rem;
+    color:#FFD700;
+}
+
+.footer span {
+    color: #48B1A1;
+}
+
+/* Responsive Styling ------------------------------------------------------ */
+@media (max-width: 768px) {
+
+    main {
+        margin: 0 10px;
+        padding: 0 20px;
+    }
+    
+    main p {
+        font-family: "Poppins", sans-serif;
+        color: #48B1A1;
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    main h1 {
+        color: #FFD700;
+        font-size: 6rem;
+        padding: 0 20px
+    }
+    
+    main h3 {
+        color: #fff;
+        font-size: 3rem;
+        padding: 0 20px;
+    }
+
+    .experience-item {
+        margin-bottom: 20px;
+    }
+
+    .academics-list li {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
